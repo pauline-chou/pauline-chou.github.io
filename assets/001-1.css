@@ -1,0 +1,585 @@
+/*邊界統統歸0------------------------------------------------------------------------------*/
+
+/*歸零*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*網頁標頭--------------------------------------------------------------------------------*/
+
+.bang{
+	background-color: #FDECD2; 
+	font-family: 標楷體;
+}
+
+/*CYIM標題*/
+.tle{
+    font-size: 40pt;
+	background-color: #EED3BE;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+	-webkit-user-select:none;/*禁止反白*/
+	flex-direction: column;
+}
+.tle-h3 {
+	margin: 0 10px;
+}
+
+/*五個按鈕*/
+.tle > nav > a{
+	background-color: #EED3BE;
+	border: #EED3BE;
+	width:130px ;
+	height: 95px;
+	font-size: 20pt;
+	font-family: Comic Sans MS;
+	padding: 3px;
+	cursor: pointer; 
+	text-decoration: none;
+	color: black;
+}
+
+/*回到最上面*/
+.top{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 1450px;
+}
+
+/*了解更多*/
+.foot{
+	font-size: 12pt;
+    background-color: #EED3BE;
+	font-family: Comic Sans MS;
+	-webkit-user-select:none;/*禁止反白*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+/*首頁--------------------------------------------------------------------------------*/
+
+
+/*會動的照片*/
+.banner {
+	widows: 100%;; 	
+	height:536px;
+	border:none;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+.long {
+	width:100%;
+	font-size:0;
+	position:absolute;
+	left:0;
+	animation:banner 16s infinite;
+}
+@keyframes banner {
+0%,25% {
+	left:0;
+}
+25%,50% {
+	left:-1254px;
+}
+50%,75% {
+	left:-2508px;
+}
+75%,100% {
+	left:-3497px;
+}
+
+}
+
+
+/*會動的石頭*/
+.img_box{
+	max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+}
+.img_box > img{
+	width:100%;
+	transition: all 0.6s;
+}
+.img_box > img:hover{
+	transform: scale(1.2);
+}
+
+
+.cat{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cat-title{
+	width: 100%;
+	padding: 20px 0;
+	font-size: 24pt;
+	background-color:  #EED3BE;
+	text-align: center;
+}
+.cat-nav {
+	margin: 0 0 0 10px;
+}
+.cat-body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 50px;
+}
+.cat-nav > ul > li{
+	margin: 45px 0;
+}
+.cat-nav > ul> li> a{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-decoration: none;
+	color: black;
+	font-size: 15pt;
+}
+
+
+/*介紹---------------------------------------------------------------------------------*/
+
+/*系所介紹、系學會活動標題*/
+.pro{
+	text-align: center;
+	font-size: 28pt;
+	border: 3px dotted;
+	background: #dfac7fc5;
+	border-color: wheat;
+	border-radius: 2em;
+	width: 220px;
+	height: 45px;
+    margin-top: 20px;
+	padding: 4px;
+	-webkit-user-select:none;/*禁止反白*/
+}
+
+.apple {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.apple-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.apple > div:nth-child(even) > div:nth-child(2){
+	order: -1;
+}
+
+
+/*系所介紹照片*/
+.mymy{
+	width:100%;
+	transition: all 0.6s;
+	width: 200px;
+	height: 300px;
+    padding:20px;
+}
+.mymy:hover{
+	transform: scale(1.2);
+}
+
+/*系所介紹內容*/
+.profiii{
+	text-align: left;
+	font-size: 18pt;
+	border: 3px dotted;
+	background: #cfb899b0;
+	border-color: wheat;
+	border-radius: 1em;
+	padding: 10px;
+	display: flex; 
+	align-items: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding:20px;
+}
+
+
+/*系學會活動*/
+.eat{
+	font-size: 16pt;
+	border: 3px dotted;
+	background: #cfb899b0;
+	border-radius:1px;
+	border-color: wheat;
+	border-radius: 2em;
+	width: 600px;
+	height: 150px;
+	padding: 15px;
+	display: flex; 
+	align-items: center;
+}
+
+/*圓圓的---------------*/
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cirrle{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+	transition: 1s;
+	margin: 0 10px 0 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.cirrle > img{
+	width: 100%;
+}
+.cirrle > h3 {
+    font-size: 30px;
+	color: white;
+	background-color: pink;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 1s;
+    text-align: center;
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+.cirrle:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.cirrle:hover > h3{
+    color: black;
+    background-color: white;
+    transition: 1s;
+    width: 70%;
+}
+
+
+/*影片-----------------------------------------------------------------------------------*/
+
+/*正片(中原資管大哉問的字)*/
+.root-video{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-img {
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+	position: absolute;
+    font-size: 24pt;
+    font-weight: 600;
+	-webkit-user-select:none;/*禁止反白*/
+}
+
+
+/*三隻影片生物*/
+.llong1{
+	width: 128.66px;
+	height: 413.33px;
+}
+.llong2{
+	width: 146.66px;
+	height: 136px;
+}
+.llong3{
+	width: 117.33px;
+	height: 224px;
+}
+
+.lllong1{
+    position: absolute;
+	top: 158px;
+	left: 50px;
+}
+.lllong2{
+    position: absolute;
+	top: 825px;
+	left: 1305px;
+}
+.lllong3{
+    position: absolute;
+	top: 1235px;
+	left: 55px;
+}
+
+
+/*成員----------------------------------------------------------------------------------*/
+
+/*照片的大小*/
+.bigsmall{
+	width:450px ;
+	height:300px;
+}
+/*ig圖示*/
+.ig{
+	width: 50px;
+	height: 50px;
+	-webkit-user-select:none;/*禁止反白*/
+}
+/*名字的框框*/
+.name13{
+	border: 3px dashed;
+	background: #ddc5a6ce;
+	color: rgb(94, 93, 93);
+	border-radius:40px 10px;
+	border-color: #d4af7e;
+	width: 200px;
+	height: 41px;
+	text-align: center;
+	font-size: 24pt;
+	-webkit-user-select:none;/*禁止反白*/
+}
+.name24{
+	border: 3px dashed;
+	background: #ddc5a6ce;
+	color:  rgb(94, 93, 93);
+	border-radius:40px 10px;
+	border-color: #d4af7e;
+	width: 200px;
+	height: 41px;
+	text-align: center;
+	font-size: 24pt;
+	-webkit-user-select:none;/*禁止反白*/
+	
+}
+/*ig放旁邊*/
+.igname{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.mem-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.mem-item:nth-child(odd) > div:nth-child(1) {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+}
+.mem-item:nth-child(even) > div:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.mem-item:nth-child(odd) > div:nth-child(1) > img{
+	margin: 0 0 10px 0;
+}
+.mem-item:nth-child(even) > div:nth-child(2) > img{
+	margin: 0 0 10px 0;
+}
+.mem-item:nth-child(odd) > div:nth-child(2){
+	position: relative;
+}
+.mem-item:nth-child(odd) > div:nth-child(2) > p{
+	position: absolute;
+    top: 40px;
+    left: 80px;
+}
+.mem-item:nth-child(even) > div:nth-child(1){
+	position: relative;
+}
+.mem-item:nth-child(even) > div:nth-child(1) > p {
+	position: absolute;
+	position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+
+/*組員心得的字*/
+.heart1{
+	font-size: 14pt;
+	width: 380px;
+	height: 300px;
+	padding: 20px;
+	border: none;
+	text-align: left;
+	
+}
+.heart2{
+	font-size: 14pt;
+	width: 380px;
+	height: 300px;
+	padding: 20px;
+	border: none;
+	text-align: left;
+	
+}
+.heart3{
+	font-size: 14pt;
+	width: 380px;
+	height: 300px;
+	padding: 20px;
+	border: none;
+	text-align: left;
+	
+}
+.heart4{
+	font-size: 14pt;
+	width: 380px;
+	height: 300px;
+	padding: 20px;
+	border: none;
+	text-align: left;
+}
+
+/*表格---------------------------------------------------------------------------------*/
+
+/*表格*/
+.form{
+	text-align: center;
+	border: 5px dashed;
+	border-color: #927241;
+	background-color:#c48888b2;
+	width: 600px;
+	-webkit-user-select:none;/*禁止反白*/
+	padding: 33px;
+	margin: 30px 0;
+	
+} 
+.form-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.form-item:nth-child(1) > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-item:nth-child(2) {
+	flex-direction: column;
+}
+.form-item:nth-child(2) > div:nth-child(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rrr{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.rrr > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px 0;
+}
+.rrr-img {
+	position: relative;
+}
+.rrr-img > img{
+	position: absolute;
+}
+.rrr-img > img:nth-child(1) { top: -550px; left: 50px;}
+.rrr-img > img:nth-child(2) { top: -325px; left: 50px;}
+.rrr-img > img:nth-child(3) { top: -100px; left: 50px;}
+.rrr-img > img:nth-child(4) { top: -550px; right: 50px;}
+.rrr-img > img:nth-child(5) { top: -325px; right: 50px;}
+.rrr-img > img:nth-child(6) { top: -100px; right: 50px;}
+
+/*表單六隻生物*/
+.con1{
+	width: 130px;
+	height: 130px;
+	
+}
+.con2{
+	width: 130px;
+	height: 130px;
+	
+}
+.con3{
+	width: 130px;
+	height: 130px;
+	
+}
+.con4{
+	width: 130px;
+	height: 130px;
+	
+}
+.con5{
+	width: 130px;
+	height: 130px;
+	
+}
+.con6{
+	width: 130px;
+	height: 130px;
+}
+
+
+
+/*想對我們說的話靠左邊*/
+.say{
+	text-align: center;
+	width: 600px;
+	-webkit-user-select:none;/*禁止反白*/
+}
+
+/*提交的按鈕*/
+.app {
+    background-color: #a56c3dd2; 
+	border: dotted 3px;
+	border-color: #d4af7e;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+
+
