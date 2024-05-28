@@ -1,0 +1,75 @@
+
+.position-relative{
+    display: flex;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.img_myself{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.img_myself:hover {
+    transform: scale(1.1);
+}
+
+
+.navbar h5{
+    margin-bottom: 20px;
+}
+.navbar ul
+{
+    padding-left: 0;
+}
+.bold{
+    font-weight: bold;
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+
+.my_contect{
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 0px;
+}
+.my_contect:hover {
+    transform: scale(1.5);
+}
+.content-right {
+    margin-left: 270px; /* 留出导航栏的宽度和一些间距 */
+    padding: 20px;
+    flex-grow: 1;
+}
+.content-right p{
+    margin: 20px 0px;
+}
+.content-right h5{
+    margin: 20px 0px;
+}
+.timeline {
+     li {
+      border-radius: 10px;
+    }
+}
+.li_text{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
